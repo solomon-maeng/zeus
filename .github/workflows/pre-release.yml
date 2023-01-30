@@ -1,0 +1,23 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      bumpLevel:
+        description: '버전 업 방식 (Semver) 선택'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+
+jobs:
+  prepare-release:
+    uses: solomon-maeng/shared_workflows/.github/workflows/prepare-release.yml@server
+    with:
+      bumpLevel: ${{ inputs.bumpLevel }}
+      mainBranch: master
+      projectName: zeus
+    secrets: inherit
