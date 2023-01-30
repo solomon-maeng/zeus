@@ -19,5 +19,4 @@ jobs:
     with:
       bumpLevel: ${{ inputs.bumpLevel }}
       mainBranch: master
-      projectName: zeus
     secrets: inherit
