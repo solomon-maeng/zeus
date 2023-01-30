@@ -15,7 +15,7 @@ on:
 
 jobs:
   prepare-release:
-    uses: solomon-maeng/shared_workflows/.github/workflows/prepare-release.yml@server
+    uses: solomon-maeng/shared_workflows/.github/workflows/prepare-release.yml@master
     with:
       bumpLevel: ${{ inputs.bumpLevel }}
       mainBranch: master
