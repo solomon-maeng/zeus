@@ -19,3 +19,4 @@ jobs:
     with:
       bumpLevel: ${{ inputs.bumpLevel }}
       mainBranch: master
+    secrets: inherit
