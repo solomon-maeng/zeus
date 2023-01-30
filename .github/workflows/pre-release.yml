@@ -19,4 +19,5 @@ jobs:
     with:
       bumpLevel: ${{ inputs.bumpLevel }}
       mainBranch: master
-      secrets: ${{ TEST_TOKEN }}
+    secrets: 
+      GITHUB_TOKEN: ${{ TEST_TOKEN }}
