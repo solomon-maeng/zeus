@@ -19,4 +19,5 @@ jobs:
     with:
       bumpLevel: ${{ inputs.bumpLevel }}
       mainBranch: master
-    secrets: inherit
+    secrets:
+      TEST_TOKEN: ${{ TEST_TOKEN }}
